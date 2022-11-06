@@ -1,15 +1,5 @@
-# 🚀 Welcome to your new awesome project!
+# Lottie Player
 
-This project has been created using **webpack-cli**, you can now run
+## IN DEVELOPMENT!
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+A simple player for Lottie Animations. You can use it to test or play animations creates to use with Lottie from Airbnb
