@@ -1,0 +1,83 @@
+.lottie-player {
+    width: 500px;
+    aspect-ratio: 16/9;
+    font-family: "Arial";
+
+    &__player {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .iddle {
+            border: 2px solid black;
+
+            &::before {
+                content: "Drag & Drop an animation to start";
+            }
+        }
+
+        .drop-over {
+            border: 2px dashed black;
+
+            &::before {
+                z-index: 1;
+                position: absolute;
+                content: "Drag & Drop an animation to start";
+            }
+        }
+            
+    }
+
+    .lottie-player__controls {
+        width: 100%;
+
+        .lottie-player__buttons {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            button {
+                appearance: none;
+                border: 0;
+                background-color: transparent;
+                margin: 0 5px;
+                color: rgb(124, 124, 124);
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+
+                &.button__one-frame-foward {
+                    rotate: 90deg;
+                }
+
+                &.button__one-frame-backward {
+                    rotate: -90deg;
+                }
+            }
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            margin: 20px 0 10px 0;
+            width: 100%;
+
+            &::-webkit-slider-runnable-track {
+                height: 5px;
+                border-radius: 10px;
+                background-color: rgba(0,0,0, 0.1);
+            }
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none; /* Override default look */
+                appearance: none;
+                margin-top: -5px; /* Centers thumb on the track */
+                background-color: rgb(124, 124, 124);
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+                
+}
